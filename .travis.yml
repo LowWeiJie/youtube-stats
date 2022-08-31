@@ -1,0 +1,11 @@
+#project development build
+language: node.js
+node_js:
+  - 16
+
+#docker build - automate docker image build
+services:
+  - docker
+
+before_install : #predeployment /pre-staging
+  -docker build -t
